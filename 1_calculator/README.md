@@ -2,7 +2,7 @@
 
 
 
-![](C:\Users\ibrah\Masaüstü\C Sharp Projects\1_calculator\calculator.png)
+
 
 # 🧮 
 
