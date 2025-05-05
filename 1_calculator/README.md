@@ -2,7 +2,7 @@
 
 
 
-![](C:\Users\ibrah\Masaüstü\C Sharp Projects\images\{EFC68415-40A1-469F-8474-080E64759B30}.png)
+![](C:\Users\ibrah\Masaüstü\C Sharp Projects\1_calculator\calculator.png)
 
 # 🧮 
 
