@@ -2,7 +2,7 @@
 
 
 
-![resim](C:\Users\ibrah\Masaüstü\C Sharp Projects\1_calculator\{A233FA5D-5F48-4C1A-A9CD-3D773DD985B3}.png)
+![resim](C:\Users\ibrah\Masaüstü\C Sharp Projects\1_calculator\{B96D0CFB-179F-4FB8-A276-64DAB56F2306}.png)
 
 # 🧮 
 
