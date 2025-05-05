@@ -1,5 +1,9 @@
 
 
+
+
+![resim](C:\Users\ibrah\Masaüstü\C Sharp Projects\1_calculator\calculatorScreen.png)
+
 # 🧮 
 
 # Calculator 2.0 - A Simple C# Calculator Application
