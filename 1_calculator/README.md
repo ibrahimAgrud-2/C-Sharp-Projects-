@@ -2,7 +2,7 @@
 
 
 
-![resim](C:\Users\ibrah\Masaüstü\C Sharp Projects\{23989719-891D-49F8-A6AB-593698C42373}.png)
+![](C:\Users\ibrah\Masaüstü\C Sharp Projects\images\{EFC68415-40A1-469F-8474-080E64759B30}.png)
 
 # 🧮 
 
