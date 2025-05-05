@@ -2,7 +2,7 @@
 
 
 
-![resim](C:\Users\ibrah\Masaüstü\C Sharp Projects\1_calculator\calculatorScreen.png)
+![resim](C:\Users\ibrah\Masaüstü\C Sharp Projects\1_calculator\{A233FA5D-5F48-4C1A-A9CD-3D773DD985B3}.png)
 
 # 🧮 
 
