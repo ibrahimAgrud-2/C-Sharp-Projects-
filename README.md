@@ -1,5 +1,2 @@
-![resim](CSharp2.png)
+![resim](icons8-c-sharp-logo-500.png)
 
-this is a c sharp projects rep.
-
-dd
