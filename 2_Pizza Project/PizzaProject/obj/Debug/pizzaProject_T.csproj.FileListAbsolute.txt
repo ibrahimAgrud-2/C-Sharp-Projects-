@@ -1,0 +1,10 @@
+C:\Users\ibrah\source\repos\pizzaProject_T\bin\Debug\pizzaProject_T.exe.config
+C:\Users\ibrah\source\repos\pizzaProject_T\bin\Debug\pizzaProject_T.exe
+C:\Users\ibrah\source\repos\pizzaProject_T\bin\Debug\pizzaProject_T.pdb
+C:\Users\ibrah\source\repos\pizzaProject_T\obj\Debug\pizzaProject_T.csproj.AssemblyReference.cache
+C:\Users\ibrah\source\repos\pizzaProject_T\obj\Debug\pizzaProject_T.Form1.resources
+C:\Users\ibrah\source\repos\pizzaProject_T\obj\Debug\pizzaProject_T.Properties.Resources.resources
+C:\Users\ibrah\source\repos\pizzaProject_T\obj\Debug\pizzaProject_T.csproj.GenerateResource.cache
+C:\Users\ibrah\source\repos\pizzaProject_T\obj\Debug\pizzaProject_T.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\source\repos\pizzaProject_T\obj\Debug\pizzaProject_T.exe
+C:\Users\ibrah\source\repos\pizzaProject_T\obj\Debug\pizzaProject_T.pdb

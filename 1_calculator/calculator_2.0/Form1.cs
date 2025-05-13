@@ -103,25 +103,30 @@ namespace calculator_2._0
        
         private void button11_Click(object sender, EventArgs e)
         {
-            if (data.operationType == operationType.divide && data.secondNumber == 0)
-            {
-                number = "";
-                textBox1.Text = "cant divide by zero";
-                textBox2.Text = "";
-                data.operationType = operationType.noOperation;
-            }
+           if (number=="")
+ {
+     return;
+ }
+ data.secondNumber = (float)Convert.ToDouble(number);
+ if (data.operationType == operationType.divide && data.secondNumber == 0)
+ {
+     number = "";
+     textBox1.Text = "cant divide by zero";
+     textBox2.Text = "";
+     data.operationType = operationType.noOperation;
+ }
 
-            else if (number != "" && data.operationType != operationType.noOperation)
-            {
-                data.secondNumber = (float)Convert.ToDouble(number);
+ else if (data.operationType != operationType.noOperation)
+ {
+     
 
-                textBox2.Text = data.firstNumber + " " + (char)data.operationType + " " + data.secondNumber + " =";
+     textBox2.Text = data.firstNumber + " " + (char)data.operationType + " " + data.secondNumber + " =";
 
-                textBox1.Text = calculate(data);
+     textBox1.Text = calculate(data);
 
-                data.firstNumber = (float)Convert.ToDouble(calculate(data));
+     data.firstNumber = (float)Convert.ToDouble(calculate(data));
 
-            }
+ }
 
         }
 
