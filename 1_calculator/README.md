@@ -18,17 +18,21 @@ This is a basic calculator application developed in C# using Visual Studio. It s
 - Clear function (C)
 - Decimal point support (.)
 
-## Requirements
-- Visual Studio (any recent version with C# support)
-- .NET Framework
-
-## Installation
-1. Download the "calculator_2.0" folder.
-2. Place the folder into your Visual Studio projects directory.
-3. Open the `.sln` file by double-clicking it in Visual Studio.
-4. Build and run the project.
 
 
+### How to Run This Project on Your Computer
+
+If you downloaded this project from the internet (e.g., from GitHub), Windows might block some files. To ensure everything works correctly, follow these steps:
+
+1. Download and extract the project folder to your computer.
+2. Open the folder.
+3. Right-click on an empty space inside the folder and select **"Open in Terminal"**.
+4. In the terminal, run the following command:
+
+   ```powershell
+   Get-ChildItem -Recurse | Unblock-File
+
+5. Finally, double-click the `.sln` file in the folder to open the project in Visual Studio.
 
 ## Notes
 ❗This application may contain bugs or errors
