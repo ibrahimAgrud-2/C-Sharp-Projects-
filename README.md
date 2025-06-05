@@ -20,13 +20,13 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 
 #### 🔥 Upcoming Projects
 
-1. **Pizza Project 2** – A C# app for pizza ordering. 🍕
-2. **XO Game** – A Tic-Tac-Toe game in C#. ❌⭕
-3. **Paper-Scissors-Rock** – Classic game in C#. ✂️
+1. **Pizza Project 2** – app for pizza ordering. 🍕
+2. **XO Game** – A Tic-Tac-Toe game . ❌⭕
+3. **Paper-Scissors-Rock** – Classic game. ✂️
 4. **Math Project** – A math-related C# application. ➗
-5. **Simple Bank Project** – Basic banking system in C#. 💰
+5. **Simple Bank Project** – Basic banking system. 💰
 6. **Flip Cards** – A memory card-flipping game. 🃏
-7. **To-Do List** – Task management app in C#. ✅
+7. **To-Do List** – Task management app . ✅
 
 *...and more coming soon!* 🚀
 
