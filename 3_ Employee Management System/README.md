@@ -14,11 +14,17 @@ A simple Windows Forms application for managing employee records. This applicati
 
 
 
-![Home Screen](HomeScreen (2).png)
+
+
+![Home Screen](HomeScreen1.png)
+
+
 
 
 
 #### 🗑️ Remove Employee Screen
+
+
 
 
 
@@ -28,7 +34,13 @@ A simple Windows Forms application for managing employee records. This applicati
 
 ####  
 
+
+
 #### :telescope:Show Employees Screen
+
+
+
+
 
 
 
