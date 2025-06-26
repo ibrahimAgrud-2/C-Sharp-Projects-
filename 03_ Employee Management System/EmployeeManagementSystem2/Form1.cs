@@ -45,7 +45,7 @@ namespace EmployeeManagementSystem2
         //============================================================================
 
 
-        //========================== Functions that are independent of UI=====================
+        //===============================================
 
         /// <summary>Checks if all MaskedTextBox controls in 'gbRequiredFields' have completed masks.</summary>
         private bool verifyInputs()
