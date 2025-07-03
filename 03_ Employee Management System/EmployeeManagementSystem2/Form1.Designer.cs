@@ -143,7 +143,7 @@
             // 
             this.btnSearchEmployee.BackColor = System.Drawing.Color.White;
             this.btnSearchEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnSearchEmployee.Location = new System.Drawing.Point(676, 419);
+            this.btnSearchEmployee.Location = new System.Drawing.Point(687, 416);
             this.btnSearchEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchEmployee.Name = "btnSearchEmployee";
             this.btnSearchEmployee.Size = new System.Drawing.Size(195, 69);
@@ -157,7 +157,7 @@
             this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.Enabled = false;
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnUpdate.Location = new System.Drawing.Point(443, 417);
+            this.btnUpdate.Location = new System.Drawing.Point(454, 414);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(195, 69);
@@ -405,7 +405,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(923, 419);
+            this.btnClear.Location = new System.Drawing.Point(934, 416);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(195, 69);
@@ -470,7 +470,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(182, 419);
+            this.btnAdd.Location = new System.Drawing.Point(193, 416);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(195, 69);

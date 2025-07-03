@@ -8,3 +8,13 @@ C:\Users\ibrah\source\repos\EmployeeManagementSystem2\obj\Debug\EmployeeManageme
 C:\Users\ibrah\source\repos\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.csproj.CoreCompileInputs.cache
 C:\Users\ibrah\source\repos\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.exe
 C:\Users\ibrah\source\repos\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.pdb
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\bin\Debug\EmployeeManagementSystem2.exe.config
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\bin\Debug\EmployeeManagementSystem2.exe
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\bin\Debug\EmployeeManagementSystem2.pdb
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.csproj.AssemblyReference.cache
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.Form1.resources
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.Properties.Resources.resources
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.csproj.GenerateResource.cache
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.exe
+C:\Users\ibrah\Masaüstü\CSharpProjects\03_ Employee Management System\EmployeeManagementSystem2\obj\Debug\EmployeeManagementSystem2.pdb
