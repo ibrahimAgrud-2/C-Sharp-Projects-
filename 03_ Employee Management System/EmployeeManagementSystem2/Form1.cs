@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Threading;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -476,5 +477,56 @@ namespace EmployeeManagementSystem2
             clearAllField(true);
         }
 
+    //========================second part -- adding Email feature ==================
+        private void mskEmail_TextChanged(object sender, EventArgs e)
+        {
+
+            if (true)
+            {
+
+            }
+        }
+
+        private void mskEmail_KeyDown(object sender, KeyEventArgs e)
+        {
+          
+        }
+
+        bool isEmailValid(string email)
+        {
+            return (email.Contains("@gmail.com"));
+        }
+
+        private void mskEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+           /* if (!Char.IsLetter(e.KeyChar)||!Char.IsDigit(e.KeyChar))
+            {
+                if (mskEmail.SelectionStart == 0 && (e.KeyChar == '@'||Char.IsDigit(e.KeyChar)))
+                {
+                    e.Handled = true;
+                }
+            }
+            
+            else if (mskEmail.Text.Length <= 10)
+            {
+                okProvider.SetError(mskEmail, "");
+                errorProvider1.SetError(mskEmail, "Enter a valid email");
+            }*/
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           if (!isEmailValid(mskEmail.Text))
+            {
+                okProvider.SetError(mskEmail, "");
+                errorProvider1.SetError(mskEmail, "Enter a valid email");
+            }
+            else
+            {
+                errorProvider1.SetError(mskEmail, "");
+                okProvider.SetError(mskEmail, "Successfully");
+            }
+        }
     }
 }
