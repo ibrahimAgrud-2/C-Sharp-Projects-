@@ -26,7 +26,6 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 4. **Math Project** – A math-related C# application. ➗
 5. **Simple Bank Project** – Basic banking system. 💰
 6. **Flip Cards** – A memory card-flipping game. 🃏
-7. **To-Do List** – Task management app . ✅
 
 *...and more coming soon!* 🚀
 
