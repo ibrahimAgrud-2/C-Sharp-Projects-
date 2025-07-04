@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.Threading;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -24,6 +23,7 @@ namespace EmployeeManagementSystem2
             rbMale.Checked = true;
             cbPhoneCode.SelectedIndex = 0;
             verifyInputs();
+            
         }
 
         //=================================GLobal variable Section===============================
@@ -42,13 +42,42 @@ namespace EmployeeManagementSystem2
             public string PhoneCode;
             public string PhoneNumber;
             public string hireDate;
+            public string email;
         }
         //============================================================================
 
 
-        //===============================================
+        //========================== Functions that are independent of UI=====================
 
         /// <summary>Checks if all MaskedTextBox controls in 'gbRequiredFields' have completed masks.</summary>
+        bool isEmailValid(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+            {
+                return false;
+            }
+            if (!char.IsLetterOrDigit(email[0]) || email.Length <= 6)
+            {
+                return false;
+            }
+            foreach (char c in email)
+            {
+                if (!(Char.IsLetterOrDigit(c) || c == '.'))
+                {
+                    return false;
+                }
+            }
+            return true;
+            //or 
+            /* 
+                          var regex = new Regex(@"^[a-zA-Z0-9](\.?[a-zA-Z0-9]){5,34}$");
+                           return regex.IsMatch(email);
+
+
+            */
+        }
+        //============================================================================
+
         private bool verifyInputs()
         {
             bool isAllInputsCorrect = true;
@@ -62,6 +91,7 @@ namespace EmployeeManagementSystem2
                     }
                 }
             }
+           
             return isAllInputsCorrect;
         }
 
@@ -84,6 +114,19 @@ namespace EmployeeManagementSystem2
         private bool isMaskInputCorrect(object sender)
         {
             MaskedTextBox msk = (MaskedTextBox)sender;
+            if (sender == mskEmail)
+            {
+                if (isEmailValid(mskEmail.Text))
+                {
+                    setProvider(lblGmail, okProvider, "Successfully");
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+         
             if (msk.MaskCompleted)
             {
                 setProvider(msk, okProvider, "Successfully");
@@ -130,6 +173,9 @@ namespace EmployeeManagementSystem2
             newItem.SubItems.Add(employeeInfoToAdd.hireDate);
             newItem.SubItems.Add(employeeInfoToAdd.PhoneCode);
             newItem.SubItems.Add(employeeInfoToAdd.PhoneNumber);
+            newItem.SubItems.Add(employeeInfoToAdd.email);
+            newItem.SubItems.Add("@gmail.com");
+
 
             if (rbMale.Checked)
             {
@@ -154,6 +200,7 @@ namespace EmployeeManagementSystem2
             collectedInfo.hireDate = dateTimePicker1.Text;
             collectedInfo.PhoneCode = cbPhoneCode.Text;
             collectedInfo.PhoneNumber = mskPhoneNumber.Text;
+            collectedInfo.email= mskEmail.Text;
             return collectedInfo;
         }
 
@@ -165,8 +212,9 @@ namespace EmployeeManagementSystem2
             if (indexOfItem != -1)
             {
                 ListViewItem item = listView1.Items[listView1.Items.IndexOfKey(employeeID)];
-                for (int i = 0; i < 8; i++)
+                for (int i = 0; i < 10; i++)
                 {
+                  
                     fields.Add(item.SubItems[i].Text);
                 }
             }
@@ -213,7 +261,7 @@ namespace EmployeeManagementSystem2
         void fillEmployeeToRemove()
         {
             List<string> fields = addDataFromListToCollection(mskIDRemove.Text);
-            if (fields.Count>0)
+            if (fields.Count > 0)
             {
                 lblFullName.Text = fields[1];
                 lblDeparment.Text = fields[2];
@@ -221,8 +269,9 @@ namespace EmployeeManagementSystem2
                 lblSalary.Text = fields[4];
                 lblHireDate.Text = fields[5];
                 lblPhoneNuber.Text = fields[7];
+                lblEmail.Text = fields[8]+"@gmail.com";
             }
-            
+
         }
 
         /// <summary>Validates and populates employee details in the remove section as ID is typed.</summary>
@@ -270,7 +319,7 @@ namespace EmployeeManagementSystem2
                 if (GetConfirmationUser("Are you sure you want to remove this employee"))
                 {
                     sbyte indexOfItem = (sbyte)listView1.Items.IndexOfKey(mskIDRemove.Text);
-                    if (indexOfItem>0)
+                    if (indexOfItem >= 0)
                     {
                         listView1.Items.RemoveAt(indexOfItem);
                         clearRemoveSection();
@@ -278,7 +327,7 @@ namespace EmployeeManagementSystem2
                         mskIDRemove.Clear();
                         notifyUser("Employee removed successfully", ToolTipIcon.Info);
                     }
-                   
+
                 }
             }
         }
@@ -326,6 +375,7 @@ namespace EmployeeManagementSystem2
             currentEmployee.SubItems[5].Text = dateTimePicker1.Value.ToString("dd MMMMyyyy");
             currentEmployee.SubItems[6].Text = cbPhoneCode.Text;
             currentEmployee.SubItems[7].Text = mskPhoneNumber.Text;
+            currentEmployee.SubItems[8].Text = mskEmail.Text;
 
             if (rbFemale.Checked)
             {
@@ -364,6 +414,7 @@ namespace EmployeeManagementSystem2
                 mskJob.Text = fields[3];
                 mskSalary.Text = fields[4];
                 mskPhoneNumber.Text = fields[7];
+                mskEmail.Text = fields[8];
             }
         }
 
@@ -468,6 +519,7 @@ namespace EmployeeManagementSystem2
             mskSalary.Clear();
             dateTimePicker1.Value = DateTime.Now;
             mskPhoneNumber.Clear();
+            mskEmail.Clear();
             cbPhoneCode.SelectedIndex = 0;
         }
 
@@ -477,56 +529,22 @@ namespace EmployeeManagementSystem2
             clearAllField(true);
         }
 
-    //========================second part -- adding Email feature ==================
         private void mskEmail_TextChanged(object sender, EventArgs e)
         {
-
-            if (true)
+            if (isEmailValid(mskEmail.Text))
             {
-
-            }
-        }
-
-        private void mskEmail_KeyDown(object sender, KeyEventArgs e)
-        {
-          
-        }
-
-        bool isEmailValid(string email)
-        {
-            return (email.Contains("@gmail.com"));
-        }
-
-        private void mskEmail_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-           /* if (!Char.IsLetter(e.KeyChar)||!Char.IsDigit(e.KeyChar))
-            {
-                if (mskEmail.SelectionStart == 0 && (e.KeyChar == '@'||Char.IsDigit(e.KeyChar)))
-                {
-                    e.Handled = true;
-                }
-            }
-            
-            else if (mskEmail.Text.Length <= 10)
-            {
-                okProvider.SetError(mskEmail, "");
-                errorProvider1.SetError(mskEmail, "Enter a valid email");
-            }*/
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           if (!isEmailValid(mskEmail.Text))
-            {
-                okProvider.SetError(mskEmail, "");
-                errorProvider1.SetError(mskEmail, "Enter a valid email");
+                setProvider(lblGmail, okProvider, "Successfully");
             }
             else
             {
-                errorProvider1.SetError(mskEmail, "");
-                okProvider.SetError(mskEmail, "Successfully");
+                setProvider(lblGmail, errorProvider1, "Email invalid");
             }
         }
+
+
+
+        //=======================Email=========================================
+
+
     }
 }

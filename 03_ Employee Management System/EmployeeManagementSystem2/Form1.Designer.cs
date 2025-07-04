@@ -35,6 +35,9 @@
             this.btnSearchEmployee = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.gbRequiredFields = new System.Windows.Forms.GroupBox();
+            this.mskEmail = new System.Windows.Forms.MaskedTextBox();
+            this.lblGmail = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.mskID = new System.Windows.Forms.MaskedTextBox();
             this.mskFullName = new System.Windows.Forms.MaskedTextBox();
             this.mskDepartment = new System.Windows.Forms.MaskedTextBox();
@@ -56,8 +59,10 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tbRemoveEmployee = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.gbEmployeeInfo = new System.Windows.Forms.GroupBox();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
             this.lblDeparment = new System.Windows.Forms.Label();
             this.lblJob = new System.Windows.Forms.Label();
@@ -85,6 +90,7 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Column = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.rbList = new System.Windows.Forms.RadioButton();
@@ -96,13 +102,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.mskEmail = new System.Windows.Forms.MaskedTextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tbAddUpdateEmployee.SuspendLayout();
             this.gbRequiredFields.SuspendLayout();
@@ -131,7 +131,6 @@
             // tbAddUpdateEmployee
             // 
             this.tbAddUpdateEmployee.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.tbAddUpdateEmployee.Controls.Add(this.button1);
             this.tbAddUpdateEmployee.Controls.Add(this.btnSearchEmployee);
             this.tbAddUpdateEmployee.Controls.Add(this.btnUpdate);
             this.tbAddUpdateEmployee.Controls.Add(this.gbRequiredFields);
@@ -151,7 +150,7 @@
             // 
             this.btnSearchEmployee.BackColor = System.Drawing.Color.White;
             this.btnSearchEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnSearchEmployee.Location = new System.Drawing.Point(687, 416);
+            this.btnSearchEmployee.Location = new System.Drawing.Point(672, 446);
             this.btnSearchEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchEmployee.Name = "btnSearchEmployee";
             this.btnSearchEmployee.Size = new System.Drawing.Size(195, 69);
@@ -165,7 +164,7 @@
             this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.Enabled = false;
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnUpdate.Location = new System.Drawing.Point(454, 414);
+            this.btnUpdate.Location = new System.Drawing.Point(439, 444);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(195, 69);
@@ -177,7 +176,8 @@
             // gbRequiredFields
             // 
             this.gbRequiredFields.Controls.Add(this.mskEmail);
-            this.gbRequiredFields.Controls.Add(this.label15);
+            this.gbRequiredFields.Controls.Add(this.lblGmail);
+            this.gbRequiredFields.Controls.Add(this.label1);
             this.gbRequiredFields.Controls.Add(this.mskID);
             this.gbRequiredFields.Controls.Add(this.mskFullName);
             this.gbRequiredFields.Controls.Add(this.mskDepartment);
@@ -193,10 +193,44 @@
             this.gbRequiredFields.Controls.Add(this.label4);
             this.gbRequiredFields.Location = new System.Drawing.Point(220, 38);
             this.gbRequiredFields.Name = "gbRequiredFields";
-            this.gbRequiredFields.Size = new System.Drawing.Size(882, 280);
+            this.gbRequiredFields.Size = new System.Drawing.Size(940, 312);
             this.gbRequiredFields.TabIndex = 60;
             this.gbRequiredFields.TabStop = false;
             this.gbRequiredFields.Text = "Required Information";
+            // 
+            // mskEmail
+            // 
+            this.mskEmail.HidePromptOnLeave = true;
+            this.mskEmail.Location = new System.Drawing.Point(620, 235);
+            this.mskEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.mskEmail.Name = "mskEmail";
+            this.mskEmail.PromptChar = ' ';
+            this.mskEmail.ResetOnSpace = false;
+            this.mskEmail.Size = new System.Drawing.Size(169, 30);
+            this.mskEmail.TabIndex = 64;
+            this.mskEmail.Tag = "Job";
+            this.mskEmail.TextChanged += new System.EventHandler(this.mskEmail_TextChanged);
+            // 
+            // lblGmail
+            // 
+            this.lblGmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGmail.Location = new System.Drawing.Point(786, 235);
+            this.lblGmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGmail.Name = "lblGmail";
+            this.lblGmail.Size = new System.Drawing.Size(127, 30);
+            this.lblGmail.TabIndex = 63;
+            this.lblGmail.Text = "@gmail.com";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(524, 236);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 29);
+            this.label1.TabIndex = 61;
+            this.label1.Text = "Email : ";
             // 
             // mskID
             // 
@@ -272,7 +306,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(449, 184);
+            this.label7.Location = new System.Drawing.Point(440, 183);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(177, 26);
@@ -395,7 +429,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(543, 66);
+            this.label5.Location = new System.Drawing.Point(545, 66);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 29);
@@ -406,7 +440,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(516, 130);
+            this.label4.Location = new System.Drawing.Point(518, 130);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 29);
@@ -415,7 +449,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(934, 416);
+            this.btnClear.Location = new System.Drawing.Point(919, 446);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(195, 69);
@@ -429,7 +463,7 @@
             this.groupBox1.Controls.Add(this.rbMale);
             this.groupBox1.Controls.Add(this.rbFemale);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(220, 330);
+            this.groupBox1.Location = new System.Drawing.Point(216, 357);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -470,7 +504,7 @@
             // 
             this.dateTimePicker1.CustomFormat = "dd MMMM yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(834, 347);
+            this.dateTimePicker1.Location = new System.Drawing.Point(830, 374);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.MaxDate = new System.DateTime(2050, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
@@ -480,7 +514,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(193, 416);
+            this.btnAdd.Location = new System.Drawing.Point(178, 446);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(195, 69);
@@ -493,7 +527,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(700, 348);
+            this.label6.Location = new System.Drawing.Point(696, 375);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(126, 29);
@@ -521,11 +555,22 @@
             this.tbRemoveEmployee.Text = "Remove employee";
             this.tbRemoveEmployee.UseVisualStyleBackColor = true;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(113, 439);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(92, 29);
+            this.label14.TabIndex = 77;
+            this.label14.Text = "Email : ";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(26, 445);
+            this.label11.Location = new System.Drawing.Point(23, 489);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(188, 29);
@@ -534,7 +579,7 @@
             // 
             // gbEmployeeInfo
             // 
-            this.gbEmployeeInfo.Controls.Add(this.label1);
+            this.gbEmployeeInfo.Controls.Add(this.lblEmail);
             this.gbEmployeeInfo.Controls.Add(this.lblFullName);
             this.gbEmployeeInfo.Controls.Add(this.lblDeparment);
             this.gbEmployeeInfo.Controls.Add(this.lblJob);
@@ -542,11 +587,22 @@
             this.gbEmployeeInfo.Controls.Add(this.lblHireDate);
             this.gbEmployeeInfo.Controls.Add(this.visibleLabel);
             this.gbEmployeeInfo.Controls.Add(this.lblPhoneNuber);
-            this.gbEmployeeInfo.Location = new System.Drawing.Point(221, 57);
+            this.gbEmployeeInfo.Location = new System.Drawing.Point(218, 101);
             this.gbEmployeeInfo.Name = "gbEmployeeInfo";
-            this.gbEmployeeInfo.Size = new System.Drawing.Size(351, 478);
+            this.gbEmployeeInfo.Size = new System.Drawing.Size(416, 455);
             this.gbEmployeeInfo.TabIndex = 75;
             this.gbEmployeeInfo.TabStop = false;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEmail.Location = new System.Drawing.Point(113, 338);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(126, 29);
+            this.lblEmail.TabIndex = 75;
+            this.lblEmail.Text = "Not Found";
             // 
             // lblFullName
             // 
@@ -563,7 +619,7 @@
             // 
             this.lblDeparment.AutoSize = true;
             this.lblDeparment.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDeparment.Location = new System.Drawing.Point(113, 96);
+            this.lblDeparment.Location = new System.Drawing.Point(113, 100);
             this.lblDeparment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeparment.Name = "lblDeparment";
             this.lblDeparment.Size = new System.Drawing.Size(126, 29);
@@ -585,7 +641,7 @@
             // 
             this.lblSalary.AutoSize = true;
             this.lblSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSalary.Location = new System.Drawing.Point(113, 242);
+            this.lblSalary.Location = new System.Drawing.Point(113, 230);
             this.lblSalary.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSalary.Name = "lblSalary";
             this.lblSalary.Size = new System.Drawing.Size(126, 29);
@@ -596,7 +652,7 @@
             // 
             this.lblHireDate.AutoSize = true;
             this.lblHireDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblHireDate.Location = new System.Drawing.Point(117, 315);
+            this.lblHireDate.Location = new System.Drawing.Point(113, 287);
             this.lblHireDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHireDate.Name = "lblHireDate";
             this.lblHireDate.Size = new System.Drawing.Size(126, 29);
@@ -629,7 +685,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(116, 299);
+            this.label17.Location = new System.Drawing.Point(113, 331);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(98, 29);
@@ -640,7 +696,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(82, 372);
+            this.label19.Location = new System.Drawing.Point(79, 388);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(132, 29);
@@ -651,7 +707,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.Location = new System.Drawing.Point(143, 226);
+            this.label21.Location = new System.Drawing.Point(140, 270);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(71, 29);
@@ -662,7 +718,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(53, 153);
+            this.label13.Location = new System.Drawing.Point(50, 197);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(161, 29);
@@ -673,7 +729,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(72, 80);
+            this.label10.Location = new System.Drawing.Point(69, 124);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(142, 29);
@@ -684,7 +740,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(39, 24);
+            this.label9.Location = new System.Drawing.Point(36, 68);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(175, 29);
@@ -694,7 +750,7 @@
             // mskIDRemove
             // 
             this.mskIDRemove.HidePromptOnLeave = true;
-            this.mskIDRemove.Location = new System.Drawing.Point(220, 24);
+            this.mskIDRemove.Location = new System.Drawing.Point(217, 68);
             this.mskIDRemove.Margin = new System.Windows.Forms.Padding(2);
             this.mskIDRemove.Mask = "000";
             this.mskIDRemove.Name = "mskIDRemove";
@@ -707,7 +763,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(634, 69);
+            this.btnRemove.Location = new System.Drawing.Point(651, 113);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(169, 53);
@@ -769,7 +825,9 @@
             this.columnHeader5,
             this.columnHeader6,
             this.Column,
-            this.columnHeader7});
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9});
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
             this.listView1.LargeImageList = this.imageList2;
@@ -777,7 +835,7 @@
             this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1364, 375);
+            this.listView1.Size = new System.Drawing.Size(1381, 375);
             this.listView1.SmallImageList = this.imageList1;
             this.listView1.TabIndex = 58;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -811,7 +869,7 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "Hire Date";
-            this.columnHeader6.Width = 200;
+            this.columnHeader6.Width = 150;
             // 
             // Column
             // 
@@ -821,7 +879,12 @@
             // columnHeader7
             // 
             this.columnHeader7.Text = "Phone Number";
-            this.columnHeader7.Width = 200;
+            this.columnHeader7.Width = 130;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Email";
+            this.columnHeader8.Width = 90;
             // 
             // imageList2
             // 
@@ -929,81 +992,10 @@
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // columnHeader9
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(113, 442);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 29);
-            this.label1.TabIndex = 75;
-            this.label1.Text = "Not Found";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(122, 497);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(92, 29);
-            this.label14.TabIndex = 77;
-            this.label14.Text = "Email : ";
-            // 
-            // mskEmail
-            // 
-            this.mskEmail.AsciiOnly = true;
-            this.mskEmail.HidePromptOnLeave = true;
-            this.mskEmail.Location = new System.Drawing.Point(620, 231);
-            this.mskEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.mskEmail.Name = "mskEmail";
-            this.mskEmail.PromptChar = ' ';
-            this.mskEmail.ResetOnSpace = false;
-            this.mskEmail.Size = new System.Drawing.Size(169, 30);
-            this.mskEmail.TabIndex = 60;
-            this.mskEmail.Tag = "Enter a Valid Email";
-            this.mskEmail.TextChanged += new System.EventHandler(this.mskEmail_TextChanged);
-            this.mskEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mskEmail_KeyDown);
-            this.mskEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskEmail_KeyPress);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(528, 231);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(86, 29);
-            this.label15.TabIndex = 61;
-            this.label15.Text = "Email :";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1109, 250);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 69);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "Test";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(709, 106);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 170);
-            this.textBox1.TabIndex = 64;
-            this.textBox1.Text = "Olabildiğince doğru düzgün bir email girilmeli.ilkk başlarda özel karakter veya r" +
-    "akam olamak";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.columnHeader9.Text = "";
+            this.columnHeader9.Width = 100;
             // 
             // Form1
             // 
@@ -1011,16 +1003,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(1387, 762);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Employee Management";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tbAddUpdateEmployee.ResumeLayout(false);
@@ -1113,12 +1105,12 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.Label lblGmail;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.MaskedTextBox mskEmail;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
     }
 }
 
