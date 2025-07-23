@@ -28,7 +28,7 @@ başlangıç tarihi bitiş tarihi
 
 #### 🔥 Upcoming Projects
 
-1. **Pizza Project 2** – app for pizza ordering. 🍕
+1. **Pizza Project 2** – for pizza ordering (extension). 🍕
 3. **Paper-Scissors-Rock** – Classic game. ✂️
 4. **Math Project** – A math-related C# application. ➗
 5. **Simple Bank Project** – Basic banking system. 💰
