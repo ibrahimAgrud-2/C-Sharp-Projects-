@@ -1,0 +1,12 @@
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\bin\Debug\Tic_Tac_ToeGame.exe.config
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\bin\Debug\Tic_Tac_ToeGame.exe
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\bin\Debug\Tic_Tac_ToeGame.pdb
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\obj\Debug\Tic_Tac_ToeGame.csproj.AssemblyReference.cache
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\obj\Debug\Tic_Tac_ToeGame.Form1.resources
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\obj\Debug\Tic_Tac_ToeGame.Properties.Resources.resources
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\obj\Debug\Tic_Tac_ToeGame.csproj.GenerateResource.cache
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\obj\Debug\Tic_Tac_ToeGame.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\obj\Debug\Tic_Tac_ToeGame.exe
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\obj\Debug\Tic_Tac_ToeGame.pdb
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\obj\Debug\Tic_Tac_.1FB76B9F.Up2Date
+C:\Users\ibrah\source\repos\Tic_Tac_ToeGame\bin\Debug\Guna.UI2.dll

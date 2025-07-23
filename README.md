@@ -18,10 +18,17 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 
 
 
+## Current Project 
+
+**XO Game** – A Tic-Tac-Toe game . ❌⭕
+
+başlangıç tarihi bitiş tarihi
+
+
+
 #### 🔥 Upcoming Projects
 
 1. **Pizza Project 2** – app for pizza ordering. 🍕
-2. **XO Game** – A Tic-Tac-Toe game . ❌⭕
 3. **Paper-Scissors-Rock** – Classic game. ✂️
 4. **Math Project** – A math-related C# application. ➗
 5. **Simple Bank Project** – Basic banking system. 💰
