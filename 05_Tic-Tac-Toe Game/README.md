@@ -4,6 +4,8 @@
 
 A classic Tic-Tac-Toe game built with **C#** and **Windows Forms**, featuring two play modes: **Player vs. Player** and **Player vs. AI (random moves)**.
 
+[Click here for the video](https://youtu.be/NkCipOAF1aI)
+
 
 
 ![1](1.png)
