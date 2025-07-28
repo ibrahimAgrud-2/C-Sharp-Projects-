@@ -18,12 +18,6 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 
 
 
-## Current Project 
-
-**XO Game** – A Tic-Tac-Toe game . ❌⭕
-
-başlangıç tarihi bitiş tarihi
-
 
 
 #### 🔥 Upcoming Projects
