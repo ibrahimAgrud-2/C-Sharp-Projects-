@@ -18,7 +18,7 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 
 
 
-#### Current project
+#### :computer: Current project
 
 - password generator 
 
