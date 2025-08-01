@@ -18,7 +18,11 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 
 
 
+#### Current project
 
+- password generator 
+
+​        progress = 23%
 
 #### 🔥 Upcoming Projects
 
