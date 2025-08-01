@@ -20,9 +20,9 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 
 #### :computer: Current project
 
-- password generator 
+- password generator
+  - progress = 23%
 
-​        progress = 23%
 
 #### 🔥 Upcoming Projects
 
