@@ -18,20 +18,16 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 
 
 
-#### :computer: Current project
 
-- password generator
-  - progress = 23%
 
 
 #### 🔥 Upcoming Projects
 
-1. **Pizza Project 2** – for pizza ordering (extension). 🍕
-3. **Paper-Scissors-Rock** – Classic game. ✂️
-4. **Math Project** – A math-related C# application. ➗
-5. **Simple Bank Project** – Basic banking system. 💰
-6. **Flip Cards** – A memory card-flipping game. 🃏
-7. **billiards game**  – A simple game 
+1. **Paper-Scissors-Rock** – Classic game. ✂️
+2. **Math Project** – A math-related C# application. ➗
+3. **Simple Bank Project** – Basic banking system. 💰
+4. **Flip Cards** – A memory card-flipping game. 🃏
+5. **billiards game**  – A simple game 
 
 *...and more coming soon!* 🚀
 
