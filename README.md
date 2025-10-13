@@ -23,11 +23,10 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 
 #### 🔥 Upcoming Projects
 
-1. **Paper-Scissors-Rock** – Classic game. ✂️
-2. **Math Project** – A math-related C# application. ➗
-3. **Simple Bank Project** – Basic banking system. 💰
-4. **Flip Cards** – A memory card-flipping game. 🃏
-5. **billiards game**  – A simple game 
+1. **Math Project** – A math-related C# application. ➗
+2. **Simple Bank Project** – Basic banking system. 💰
+3. **Flip Cards** – A memory card-flipping game. 🃏
+4. **billiards game**  – A simple game 
 
 *...and more coming soon!* 🚀
 
