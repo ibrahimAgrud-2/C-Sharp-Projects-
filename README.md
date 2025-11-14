@@ -21,17 +21,6 @@ If you downloaded this project from the internet (e.g., from GitHub), Windows mi
 
 
 
-#### 🔥 Upcoming Projects
-
-1. **Math Project** – A math-related C# application. ➗
-2. **Simple Bank Project** – Basic banking system. 💰
-3. **Flip Cards** – A memory card-flipping game. 🃏
-4. **billiards game**  – A simple game 
-
-*...and more coming soon!* 🚀
-
-
-
 
 
 
